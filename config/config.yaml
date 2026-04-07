@@ -443,7 +443,7 @@ ai:
   # 高级选项
   num_retries: 1                    # 失败重试次数
   fallback_models: []               # 备用模型列表（可选）
-                                    # 示例: ["openai/gpt-4o-mini", "openai/deepseek-ai/DeepSeek-V3"]
+                                    # 示例: ["qwen/qwen3.6-plus:free", "nvidia/nemotron-3-super-120b-a12b:free"]
 
   # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   # 额外参数 (高级选项，一般无需修改)
@@ -468,7 +468,7 @@ ai:
 # 模型配置见上方 ai 配置段
 # ===============================================================
 ai_analysis:
-  enabled: false                     # 是否启用 AI 分析（总开关）
+  enabled: true                     # 是否启用 AI 分析（总开关）
                                     # ⚠️ 开启调度系统后，此项仍为总开关：
                                     #   false → 永远不分析（无论调度怎么设置）
                                     #   true  → 由调度的 analyze 字段控制何时分析
