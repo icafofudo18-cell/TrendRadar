@@ -443,7 +443,8 @@ ai:
   # 高级选项
   num_retries: 1                    # 失败重试次数
   fallback_models: []               # 备用模型列表（可选）
-                                    # 示例: ["qwen/qwen3.6-plus:free", "nvidia/nemotron-3-super-120b-a12b:free"]
+                                    # 示例: ["google/gemma-4-31b-it:free", "nvidia/nemotron-3-super-120b-a12b:free","minimax/minimax-m2.5:free",
+                                    "z-ai/glm-4.5-air:free"]
 
   # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   # 额外参数 (高级选项，一般无需修改)
