@@ -415,7 +415,7 @@ ai:
   # 完整列表: https://docs.litellm.ai/docs/providers
   # 如果你对于看英文文档比较头疼，那么可以点击页面右下角的 【Ask AI】 ,用中文询问怎么配置 
   
-  model: "openrouter/openai/gpt-oss-120b:free"
+  model: "openrouter/minimax/minimax-m2.5:free"
 
   api_key: ${AI_API_KEY}                        # API Key（建议使用环境变量 AI_API_KEY）
   
@@ -442,7 +442,7 @@ ai:
                                     # 注意：如果 API 不支持此参数(报 HTTP 400)，请设为 0 以禁用发送
   # 高级选项
   num_retries: 1                    # 失败重试次数
-  fallback_models: []               # 备用模型列表（可选）
+  fallback_models: ["google/gemma-4-31b-it:free","nvidia/nemotron-3-super-120b-a12b:free","z-ai/glm-4.5-air:free"]               # 备用模型列表（可选）
                                     # 示例: ["google/gemma-4-31b-it:free","nvidia/nemotron-3-super-120b-a12b:free","minimax/minimax-m2.5:free","z-ai/glm-4.5-air:free"]
 
   # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
