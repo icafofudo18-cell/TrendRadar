@@ -441,8 +441,8 @@ ai:
   max_tokens: 5000                  # 最大生成 token 数
                                     # 注意：如果 API 不支持此参数(报 HTTP 400)，请设为 0 以禁用发送
   # 高级选项
-  num_retries: 2                    # 失败重试次数
-  fallback_models: ["openrouter/google/gemma-4-31b-it:free","openrouter/nvidia/nemotron-3-super-120b-a12b:free"]               # 备用模型列表（可选）
+  num_retries: 1                    # 失败重试次数
+  fallback_models: ["openrouter/nvidia/nemotron-3-super-120b-a12b:free","openrouter/google/gemma-4-31b-it:free"]               # 备用模型列表（可选）
                                     # 示例: ["google/gemma-4-31b-it:free","nvidia/nemotron-3-super-120b-a12b:free","minimax/minimax-m2.5:free","z-ai/glm-4.5-air:free"]
 
   # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
